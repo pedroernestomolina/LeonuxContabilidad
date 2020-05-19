@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="068c1adee80a406eacafca218c8aa80b" Name="Diagram1" ZoomLevel="29">
+        <EntityTypeShape EntityType="dBModel.clientes" Width="1.5" PointX="2" PointY="67.125" />
+        <EntityTypeShape EntityType="dBModel.ventas_detalle" Width="1.5" PointX="9" PointY="77.625" />
+        <AssociationConnector Association="dBModel.ventas_detalle_ibfk_6" />
+        <EntityTypeShape EntityType="dBModel.bancos" Width="1.5" PointX="27.875" PointY="61.5" />
+        <EntityTypeShape EntityType="dBModel.compras_retenciones" Width="1.5" PointX="37.5" PointY="45.75" />
+        <EntityTypeShape EntityType="dBModel.compras_detalle" Width="1.5" PointX="34.5" PointY="44.625" />
+        <EntityTypeShape EntityType="dBModel.compras_retenciones_detalle" Width="1.5" PointX="40.25" PointY="46.5" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_asiento" Width="1.5" PointX="32.5" PointY="30.625" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_asiento_detalle" Width="1.5" PointX="34.75" PointY="31.125" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_asiento_documento" Width="1.5" PointX="38.5" PointY="35.25" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_asiento_resumen" Width="1.5" PointX="38" PointY="39.5" />
+        <AssociationConnector Association="dBModel.contabilidad_asiento_detalle_ibfk_1" />
+        <AssociationConnector Association="dBModel.contabilidad_asiento_resumen_ibfk_1" />
+        <AssociationConnector Association="dBModel.contabilidad_asiento_detalle_ibfk_3" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_banco_conceptos" Width="1.5" PointX="40.75" PointY="62.125" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_configuracion" Width="1.5" PointX="28.875" PointY="28.75" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_contadores" Width="1.5" PointX="38.625" PointY="28.875" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_historico" Width="1.5" PointX="42.125" PointY="32.875" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_integraciones" Width="1.5" PointX="35.375" PointY="27.125" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_plancta" Width="2.5" PointX="25.75" PointY="32.875" />
+        <AssociationConnector Association="dBModel.contabilidad_integraciones_ibfk_1" />
+        <AssociationConnector Association="dBModel.contabilidad_asiento_detalle_ibfk_2" />
+        <AssociationConnector Association="dBModel.contabilidad_asiento_resumen_ibfk_2" />
+        <AssociationConnector Association="dBModel.contabilidad_configuracion_ibfk_1" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_reglas_integracion" Width="1.5" PointX="40.25" PointY="26.375" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_tipo_documento" Width="1.5" PointX="32.25" PointY="27.875" />
+        <AssociationConnector Association="dBModel.contabilidad_asiento_ibfk_1" />
+        <AssociationConnector Association="dBModel.contabilidad_integraciones_ibfk_2" />
+        <EntityTypeShape EntityType="dBModel.cxc_recibos" Width="1.5" PointX="12.75" PointY="55.25" />
+        <AssociationConnector Association="dBModel.cxc_recibos_ibfk_2" />
+        <EntityTypeShape EntityType="dBModel.cxp" Width="1.5" PointX="21.75" PointY="11.25" />
+        <EntityTypeShape EntityType="dBModel.cxp_recibos" Width="1.5" PointX="25.25" PointY="11.125" />
+        <EntityTypeShape EntityType="dBModel.empresa" Width="1.5" PointX="31" PointY="79.125" />
+        <EntityTypeShape EntityType="dBModel.empresa_departamentos" Width="1.5" PointX="28.875" PointY="76.5" />
+        <EntityTypeShape EntityType="dBModel.empresa_series_fiscales" Width="1.5" PointX="33.625" PointY="77.625" />
+        <EntityTypeShape EntityType="dBModel.cxp_documentos" Width="1.5" PointX="28.625" PointY="12.5" />
+        <EntityTypeShape EntityType="dBModel.cxp_medio_pago" Width="1.5" PointX="25.125" PointY="17" />
+        <AssociationConnector Association="dBModel.compras_detalle_ibfk_3" />
+        <AssociationConnector Association="dBModel.ventas_detalle_ibfk_2" />
+        <EntityTypeShape EntityType="dBModel.productos" Width="1.5" PointX="19.625" PointY="98" />
+        <EntityTypeShape EntityType="dBModel.productos_grupo" Width="1.5" PointX="23.875" PointY="96.75" />
+        <EntityTypeShape EntityType="dBModel.productos_marca" Width="1.5" PointX="14.375" PointY="108.25" />
+        <EntityTypeShape EntityType="dBModel.productos_medida" Width="1.5" PointX="8.625" PointY="100.625" />
+        <EntityTypeShape EntityType="dBModel.productos_kardex" Width="1.5" PointX="23.875" PointY="101.5" />
+        <AssociationConnector Association="dBModel.productos_ibfk_1" />
+        <AssociationConnector Association="dBModel.compras_detalle_ibfk_2" />
+        <AssociationConnector Association="dBModel.productos_ibfk_10" />
+        <AssociationConnector Association="dBModel.productos_ibfk_11" />
+        <AssociationConnector Association="dBModel.productos_ibfk_2" />
+        <AssociationConnector Association="dBModel.productos_ibfk_4" />
+        <AssociationConnector Association="dBModel.productos_ibfk_5" />
+        <AssociationConnector Association="dBModel.productos_ibfk_7" />
+        <AssociationConnector Association="dBModel.productos_ibfk_8" />
+        <AssociationConnector Association="dBModel.productos_ibfk_9" />
+        <AssociationConnector Association="dBModel.productos_kardex_ibfk_1" />
+        <AssociationConnector Association="dBModel.ventas_detalle_ibfk_1" />
+        <AssociationConnector Association="dBModel.compras_detalle_ibfk_4" />
+        <AssociationConnector Association="dBModel.ventas_detalle_ibfk_3" />
+        <EntityTypeShape EntityType="dBModel.productos_movimientos" Width="1.5" PointX="29.625" PointY="116.75" />
+        <EntityTypeShape EntityType="dBModel.productos_movimientos_detalle" Width="1.5" PointX="27" PointY="110.125" />
+        <AssociationConnector Association="dBModel.productos_movimientos_detalle_ibfk_2" />
+        <AssociationConnector Association="dBModel.productos_movimientos_detalle_ibfk_1" />
+        <EntityTypeShape EntityType="dBModel.productos_proveedor" Width="1.5" PointX="16.375" PointY="94.625" />
+        <EntityTypeShape EntityType="dBModel.proveedores" Width="1.5" PointX="19.125" PointY="41.875" />
+        <AssociationConnector Association="dBModel.cxp_ibfk_1" />
+        <AssociationConnector Association="dBModel.productos_proveedor_ibfk_1" />
+        <AssociationConnector Association="dBModel.productos_proveedor_ibfk_2" />
+        <AssociationConnector Association="dBModel.compras_detalle_ibfk_7" />
+        <AssociationConnector Association="dBModel.contabilidad_plancta_ibfk_1" />
+        <EntityTypeShape EntityType="dBModel.empresa_cobradores" Width="1.5" PointX="26.25" PointY="80.5" />
+        <EntityTypeShape EntityType="dBModel.empresa_medios" Width="1.5" PointX="23" PointY="81.375" />
+        <AssociationConnector Association="dBModel.clientes_ibfk_5" />
+        <AssociationConnector Association="dBModel.cxc_recibos_ibfk_3" />
+        <EntityTypeShape EntityType="dBModel.bancos_movimientos_conceptos" Width="1.5" PointX="38.5" PointY="62" />
+        <AssociationConnector Association="dBModel.contabilidad_banco_conceptos_ibfk_1" />
+        <EntityTypeShape EntityType="dBModel.ventas_retenciones" Width="1.5" PointX="5.125" PointY="23.875" />
+        <EntityTypeShape EntityType="dBModel.cxc_vendedor_comisiones_generadas" Width="1.5" PointX="19.125" PointY="62.5" />
+        <EntityTypeShape EntityType="dBModel.cxc_retenciones_generadas" Width="1.5" PointX="2.75" PointY="45.75" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_reglas_integracion_detalle" Width="1.5" PointX="46.5" PointY="25.625" />
+        <AssociationConnector Association="dBModel.contabilidad_reglas_integracion_detalle_ibfk_2" />
+        <AssociationConnector Association="dBModel.contabilidad_reglas_integracion_detalle_ibfk_1" />
+        <EntityTypeShape EntityType="dBModel.cxc" Width="1.5" PointX="4.375" PointY="49.25" />
+        <AssociationConnector Association="dBModel.cxc_ibfk_1" />
+        <AssociationConnector Association="dBModel.cxc_recibos_ibfk_4" />
+        <AssociationConnector Association="dBModel.cxc_retenciones_generadas_ibfk_1" />
+        <AssociationConnector Association="dBModel.cxc_vendedor_comisiones_generadas_ibfk_1" />
+        <EntityTypeShape EntityType="dBModel.ventas_retenciones_detalle" Width="1.5" PointX="7.5" PointY="25.5" />
+        <EntityTypeShape EntityType="dBModel.productos_kardex_resumen" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dBModel.productos_deposito" Width="1.5" PointX="21.875" PointY="108" />
+        <AssociationConnector Association="dBModel.productos_deposito_ibfk_1" />
+        <EntityTypeShape EntityType="dBModel.cxc_medio_pago" Width="1.5" PointX="23.625" PointY="66.875" />
+        <AssociationConnector Association="dBModel.cxc_medio_pago_ibfk_1" />
+        <AssociationConnector Association="dBModel.cxc_medio_pago_ibfk_2" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_banco" Width="1.5" PointX="33.5" PointY="55.375" />
+        <AssociationConnector Association="dBModel.contabilidad_banco_ibfk_2" />
+        <AssociationConnector Association="dBModel.contabilidad_banco_ibfk_3" />
+        <AssociationConnector Association="dBModel.contabilidad_banco_ibfk_4" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_deposito" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="dBModel.empresa_depositos" Width="1.5" PointX="1.875" PointY="8.25" />
+        <AssociationConnector Association="dBModel.contabilidad_deposito_ibfk_1" />
+        <AssociationConnector Association="dBModel.compras_detalle_ibfk_6" />
+        <AssociationConnector Association="dBModel.productos_deposito_ibfk_2" />
+        <AssociationConnector Association="dBModel.productos_kardex_ibfk_2" />
+        <AssociationConnector Association="dBModel.productos_movimientos_ibfk_3" />
+        <AssociationConnector Association="dBModel.productos_movimientos_ibfk_4" />
+        <AssociationConnector Association="dBModel.ventas_detalle_ibfk_5" />
+        <EntityTypeShape EntityType="dBModel.bancos_movimientos" Width="1.5" PointX="30.75" PointY="62.625" />
+        <AssociationConnector Association="dBModel.bancos_movimientos_ibfk_1" />
+        <EntityTypeShape EntityType="dBModel.ventas" Width="1.5" PointX="19.375" PointY="65.75" />
+        <AssociationConnector Association="dBModel.bancos_ibfk_2" />
+        <AssociationConnector Association="dBModel.bancos_movimientos_conceptos_ibfk_2" />
+        <AssociationConnector Association="dBModel.bancos_movimientos_conceptos_ibfk_3" />
+        <AssociationConnector Association="dBModel.ventas_ibfk_5" />
+        <AssociationConnector Association="dBModel.ventas_detalle_ibfk_8" />
+        <EntityTypeShape EntityType="dBModel.sistema_contadores" Width="1.5" PointX="4.375" PointY="3.75" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_asiento_docadm" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_departamentos" Width="3.875" PointX="50.625" PointY="53.875" />
+        <AssociationConnector Association="dBModel.contabilidad_departamentos_ibfk_2" />
+        <AssociationConnector Association="dBModel.contabilidad_departamentos_ibfk_3" />
+        <AssociationConnector Association="dBModel.contabilidad_departamentos_ibfk_4" />
+        <AssociationConnector Association="dBModel.contabilidad_departamentos_ibfk_5" />
+        <AssociationConnector Association="dBModel.contabilidad_departamentos_ibfk_6" />
+        <AssociationConnector Association="dBModel.contabilidad_departamentos_ibfk_7" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_empresa_medio" Width="1.5" PointX="33" PointY="61.25" />
+        <AssociationConnector Association="dBModel.contabilidad_empresa_medio_ibfk_1" />
+        <AssociationConnector Association="dBModel.contabilidad_empresa_medio_ibfk_2" />
+        <EntityTypeShape EntityType="dBModel.contabilidad_periodo" Width="1.5" PointX="8" PointY="2.5" />
+        <EntityTypeShape EntityType="dBModel.compras" Width="1.5" PointX="21.375" PointY="37.625" />
+        <AssociationConnector Association="dBModel.compras_detalle_ibfk_1" />
+        <AssociationConnector Association="dBModel.compras_ibfk_1" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

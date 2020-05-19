@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E3EE96B-92CF-45E0-81F3-A56A8D2372A0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EntityMySQL</RootNamespace>
+    <AssemblyName>EntityMySQL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.8.1\Assemblies\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.8.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.8.1\Assemblies\v4.5\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bancos.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bancos_movimientos.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bancos_movimientos_conceptos.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="clientes.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="compras.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="compras_detalle.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="compras_retenciones.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="compras_retenciones_detalle.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_asiento.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_asiento_detalle.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_asiento_docadm.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_asiento_documento.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_asiento_resumen.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_banco.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_banco_conceptos.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_configuracion.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_contadores.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_departamentos.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_deposito.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_empresa_medio.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_historico.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_integraciones.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_periodo.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_plancta.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_reglas_integracion.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_reglas_integracion_detalle.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contabilidad_tipo_documento.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cxc.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cxc_medio_pago.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cxc_recibos.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cxc_retenciones_generadas.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cxc_vendedor_comisiones_generadas.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cxp.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cxp_documentos.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cxp_medio_pago.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cxp_recibos.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="empresa.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="empresa_cobradores.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="empresa_departamentos.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="empresa_depositos.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="empresa_medios.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="empresa_series_fiscales.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs" />
+    <Compile Include="productos.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="productos_deposito.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="productos_grupo.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="productos_kardex.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="productos_kardex_resumen.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="productos_marca.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="productos_medida.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="productos_movimientos.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="productos_movimientos_detalle.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="productos_proveedor.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proveedores.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sistema_contadores.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ventas.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ventas_detalle.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ventas_retenciones.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ventas_retenciones_detalle.cs">
+      <DependentUpon>dBModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="dBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="dBModel.edmx.diagram">
+      <DependentUpon>dBModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dBModel.edmx</DependentUpon>
+      <LastGenOutput>dBModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="dBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dBModel.edmx</DependentUpon>
+      <LastGenOutput>dBModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tool_cxp_banco">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="codigo" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="120" Nullable="false" />
+          <Property Name="nroCuenta" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="saldoInicial" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="saldoConciliado" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="debitos" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="creditos" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="titular" Type="varchar" MaxLength="120" Nullable="false" />
+          <Property Name="tipoCta" Type="int" Nullable="false" />
+          <Property Name="naturalezaCta" Type="int" Nullable="false" />
+          <Property Name="isInactivo" Type="bit" Nullable="false" />
+          <Property Name="dirEntidad" Type="varchar" MaxLength="240" Nullable="false" />
+          <Property Name="telEntidad" Type="varchar" MaxLength="240" Nullable="false" />
+          <Property Name="contactoEntidad" Type="varchar" MaxLength="120" Nullable="false" />
+          <Property Name="fechaApertura" Type="datetime" Nullable="false" />
+          <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tool_cxp_concepto">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="codigo" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="120" Nullable="false" />
+          <Property Name="clase" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="aplicaBanco" Type="bit" />
+          <Property Name="aplicaCompra" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="dbModelStoreContainer">
+          <EntitySet Name="tool_cxp_banco" EntityType="Self.tool_cxp_banco" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tool_cxp_concepto" EntityType="Self.tool_cxp_concepto" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tool_cxp_banco">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nroCuenta" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="saldoInicial" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="saldoConciliado" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="debitos" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="creditos" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="titular" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tipoCta" Type="Int32" Nullable="false" />
+          <Property Name="naturalezaCta" Type="Int32" Nullable="false" />
+          <Property Name="isInactivo" Type="Boolean" Nullable="false" />
+          <Property Name="dirEntidad" Type="String" MaxLength="240" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="telEntidad" Type="String" MaxLength="240" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="contactoEntidad" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fechaApertura" Type="DateTime" Nullable="false" />
+          <Property Name="fechaRegistro" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tool_cxp_concepto">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="descripcion" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="clase" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="aplicaBanco" Type="Boolean" />
+          <Property Name="aplicaCompra" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="dbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tool_cxp_banco" EntityType="Self.tool_cxp_banco" />
+          <EntitySet Name="tool_cxp_concepto" EntityType="Self.tool_cxp_concepto" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbModelStoreContainer" CdmEntityContainer="dbEntities">
+          <EntitySetMapping Name="tool_cxp_banco">
+            <EntityTypeMapping TypeName="dbModel.tool_cxp_banco">
+              <MappingFragment StoreEntitySet="tool_cxp_banco">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="codigo" ColumnName="codigo" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="nroCuenta" ColumnName="nroCuenta" />
+                <ScalarProperty Name="saldoInicial" ColumnName="saldoInicial" />
+                <ScalarProperty Name="saldoConciliado" ColumnName="saldoConciliado" />
+                <ScalarProperty Name="debitos" ColumnName="debitos" />
+                <ScalarProperty Name="creditos" ColumnName="creditos" />
+                <ScalarProperty Name="titular" ColumnName="titular" />
+                <ScalarProperty Name="tipoCta" ColumnName="tipoCta" />
+                <ScalarProperty Name="naturalezaCta" ColumnName="naturalezaCta" />
+                <ScalarProperty Name="isInactivo" ColumnName="isInactivo" />
+                <ScalarProperty Name="dirEntidad" ColumnName="dirEntidad" />
+                <ScalarProperty Name="telEntidad" ColumnName="telEntidad" />
+                <ScalarProperty Name="contactoEntidad" ColumnName="contactoEntidad" />
+                <ScalarProperty Name="fechaApertura" ColumnName="fechaApertura" />
+                <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tool_cxp_concepto">
+            <EntityTypeMapping TypeName="dbModel.tool_cxp_concepto">
+              <MappingFragment StoreEntitySet="tool_cxp_concepto">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="codigo" ColumnName="codigo" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="clase" ColumnName="clase" />
+                <ScalarProperty Name="aplicaBanco" ColumnName="aplicaBanco" />
+                <ScalarProperty Name="aplicaCompra" ColumnName="aplicaCompra" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

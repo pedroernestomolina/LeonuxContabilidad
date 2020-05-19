@@ -1,0 +1,130 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityMySQL", "EntityMySQL\EntityMySQL.csproj", "{6E3EE96B-92CF-45E0-81F3-A56A8D2372A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IProvider", "IProvider\IProvider.csproj", "{ECEB09CF-0DE3-457B-A7B5-9AC31FD46A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderMySql", "ProviderMySql\ProviderMySql.csproj", "{B1E8FCE1-D521-4D23-8159-80106FC42B9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{61823C8C-A2D1-43BA-A70D-5A33901B33D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleEntity", "ConsoleEntity\ConsoleEntity.csproj", "{43CFF57D-F7AC-4A50-B216-CD82CB090468}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackEnd", "BackEnd", "{43875189-7AAF-4BBB-814E-8E10CE5D5362}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{83EBB2F7-2B5B-48AE-AD26-96C52C782415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormContable", "FormContable\FormContable.csproj", "{BAFCF165-DD09-46D4-9ACC-81D1FFBD7DA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Servicio", "Servicio", "{40ABD5AC-BBF1-4F00-9842-2635A5E53DB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicio", "Servicio\Servicio.csproj", "{7C6C4029-C8CA-4EBD-89C4-02C13456BC4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOB", "OOB\OOB.csproj", "{B2CCFD3A-4C87-4CB6-9112-2C6EE13F7E8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsCtaxCobrar", "ToolsCtaxCobrar\ToolsCtaxCobrar.csproj", "{4154410F-50D2-45DE-96F6-1A78DCC3082A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://2012-vm-sour:9000/tfs/pos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ConsoleEntity\\ConsoleEntity.csproj
+		SccProjectTopLevelParentUniqueName1 = Leonux.sln
+		SccProjectName1 = ConsoleEntity
+		SccLocalPath1 = ConsoleEntity
+		SccProjectUniqueName2 = DTO\\DTO.csproj
+		SccProjectTopLevelParentUniqueName2 = Leonux.sln
+		SccProjectName2 = DTO
+		SccLocalPath2 = DTO
+		SccProjectUniqueName3 = EntityMySQL\\EntityMySQL.csproj
+		SccProjectTopLevelParentUniqueName3 = Leonux.sln
+		SccProjectName3 = EntityMySQL
+		SccLocalPath3 = EntityMySQL
+		SccProjectUniqueName4 = FormContable\\FormContable.csproj
+		SccProjectTopLevelParentUniqueName4 = Leonux.sln
+		SccProjectName4 = FormContable
+		SccLocalPath4 = FormContable
+		SccProjectUniqueName5 = IProvider\\IProvider.csproj
+		SccProjectTopLevelParentUniqueName5 = Leonux.sln
+		SccProjectName5 = IProvider
+		SccLocalPath5 = IProvider
+		SccProjectUniqueName6 = OOB\\OOB.csproj
+		SccProjectTopLevelParentUniqueName6 = Leonux.sln
+		SccProjectName6 = OOB
+		SccLocalPath6 = OOB
+		SccProjectUniqueName7 = ProviderMySql\\ProviderMySql.csproj
+		SccProjectTopLevelParentUniqueName7 = Leonux.sln
+		SccProjectName7 = ProviderMySql
+		SccLocalPath7 = ProviderMySql
+		SccProjectUniqueName8 = Servicio\\Servicio.csproj
+		SccProjectTopLevelParentUniqueName8 = Leonux.sln
+		SccProjectName8 = Servicio
+		SccLocalPath8 = Servicio
+		SccProjectUniqueName9 = ToolsCtaxCobrar\\ToolsCtaxCobrar.csproj
+		SccProjectTopLevelParentUniqueName9 = Leonux.sln
+		SccProjectName9 = ToolsCtaxCobrar
+		SccLocalPath9 = ToolsCtaxCobrar
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E3EE96B-92CF-45E0-81F3-A56A8D2372A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E3EE96B-92CF-45E0-81F3-A56A8D2372A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E3EE96B-92CF-45E0-81F3-A56A8D2372A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E3EE96B-92CF-45E0-81F3-A56A8D2372A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECEB09CF-0DE3-457B-A7B5-9AC31FD46A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECEB09CF-0DE3-457B-A7B5-9AC31FD46A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECEB09CF-0DE3-457B-A7B5-9AC31FD46A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECEB09CF-0DE3-457B-A7B5-9AC31FD46A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1E8FCE1-D521-4D23-8159-80106FC42B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E8FCE1-D521-4D23-8159-80106FC42B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E8FCE1-D521-4D23-8159-80106FC42B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E8FCE1-D521-4D23-8159-80106FC42B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61823C8C-A2D1-43BA-A70D-5A33901B33D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61823C8C-A2D1-43BA-A70D-5A33901B33D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61823C8C-A2D1-43BA-A70D-5A33901B33D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61823C8C-A2D1-43BA-A70D-5A33901B33D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43CFF57D-F7AC-4A50-B216-CD82CB090468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43CFF57D-F7AC-4A50-B216-CD82CB090468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43CFF57D-F7AC-4A50-B216-CD82CB090468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43CFF57D-F7AC-4A50-B216-CD82CB090468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAFCF165-DD09-46D4-9ACC-81D1FFBD7DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFCF165-DD09-46D4-9ACC-81D1FFBD7DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAFCF165-DD09-46D4-9ACC-81D1FFBD7DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAFCF165-DD09-46D4-9ACC-81D1FFBD7DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C6C4029-C8CA-4EBD-89C4-02C13456BC4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C6C4029-C8CA-4EBD-89C4-02C13456BC4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C6C4029-C8CA-4EBD-89C4-02C13456BC4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C6C4029-C8CA-4EBD-89C4-02C13456BC4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2CCFD3A-4C87-4CB6-9112-2C6EE13F7E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2CCFD3A-4C87-4CB6-9112-2C6EE13F7E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2CCFD3A-4C87-4CB6-9112-2C6EE13F7E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2CCFD3A-4C87-4CB6-9112-2C6EE13F7E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4154410F-50D2-45DE-96F6-1A78DCC3082A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4154410F-50D2-45DE-96F6-1A78DCC3082A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4154410F-50D2-45DE-96F6-1A78DCC3082A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4154410F-50D2-45DE-96F6-1A78DCC3082A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E3EE96B-92CF-45E0-81F3-A56A8D2372A0} = {43875189-7AAF-4BBB-814E-8E10CE5D5362}
+		{ECEB09CF-0DE3-457B-A7B5-9AC31FD46A3E} = {43875189-7AAF-4BBB-814E-8E10CE5D5362}
+		{B1E8FCE1-D521-4D23-8159-80106FC42B9B} = {43875189-7AAF-4BBB-814E-8E10CE5D5362}
+		{61823C8C-A2D1-43BA-A70D-5A33901B33D4} = {43875189-7AAF-4BBB-814E-8E10CE5D5362}
+		{43CFF57D-F7AC-4A50-B216-CD82CB090468} = {43875189-7AAF-4BBB-814E-8E10CE5D5362}
+		{BAFCF165-DD09-46D4-9ACC-81D1FFBD7DA3} = {83EBB2F7-2B5B-48AE-AD26-96C52C782415}
+		{40ABD5AC-BBF1-4F00-9842-2635A5E53DB1} = {43875189-7AAF-4BBB-814E-8E10CE5D5362}
+		{7C6C4029-C8CA-4EBD-89C4-02C13456BC4F} = {40ABD5AC-BBF1-4F00-9842-2635A5E53DB1}
+		{B2CCFD3A-4C87-4CB6-9112-2C6EE13F7E8B} = {83EBB2F7-2B5B-48AE-AD26-96C52C782415}
+		{4154410F-50D2-45DE-96F6-1A78DCC3082A} = {83EBB2F7-2B5B-48AE-AD26-96C52C782415}
+	EndGlobalSection
+EndGlobal

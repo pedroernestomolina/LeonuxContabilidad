@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2CCFD3A-4C87-4CB6-9112-2C6EE13F7E8B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OOB</RootNamespace>
+    <AssemblyName>OOB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bancos\Banco\Actualizar.cs" />
+    <Compile Include="Bancos\Banco\Ficha.cs" />
+    <Compile Include="Bancos\Conceptos\Actualizar.cs" />
+    <Compile Include="Bancos\Conceptos\Enumerados.cs" />
+    <Compile Include="Bancos\Conceptos\Ficha.cs" />
+    <Compile Include="Bancos\Enumerados.cs" />
+    <Compile Include="Bancos\Movimiento\Ficha.cs" />
+    <Compile Include="Clientes\Cliente\Ficha.cs" />
+    <Compile Include="Clientes\Cliente\Filtro.cs" />
+    <Compile Include="Clientes\Enumerados.cs" />
+    <Compile Include="Compras\Compra\ActualizarData.cs" />
+    <Compile Include="Compras\Compra\Detalle.cs" />
+    <Compile Include="Compras\Enumerados.cs" />
+    <Compile Include="Compras\Compra\Ficha.cs" />
+    <Compile Include="Compras\RetencionIslr\Detalle.cs" />
+    <Compile Include="Compras\RetencionIslr\Ficha.cs" />
+    <Compile Include="Compras\RetencionIva\Detalle.cs" />
+    <Compile Include="Compras\RetencionIva\Ficha.cs" />
+    <Compile Include="Contable\Asiento\Apertura\Insertar.cs" />
+    <Compile Include="Contable\Asiento\Apertura\InsertarDetalles.cs" />
+    <Compile Include="Contable\Asiento\Asiento\Detalle.cs" />
+    <Compile Include="Contable\Asiento\Asiento\Guardar.cs" />
+    <Compile Include="Contable\Asiento\Editar.cs" />
+    <Compile Include="Contable\Asiento\Enumerados.cs" />
+    <Compile Include="Contable\Asiento\Ficha.cs" />
+    <Compile Include="Contable\Asiento\FichaDetalle.cs" />
+    <Compile Include="Contable\Asiento\FichaDocumento.cs" />
+    <Compile Include="Contable\Asiento\FichaResumen.cs" />
+    <Compile Include="Contable\Asiento\Generar\Enumerados.cs" />
+    <Compile Include="Contable\Asiento\Generar\Ficha.cs" />
+    <Compile Include="Contable\Asiento\Generar\FichaDetalle.cs" />
+    <Compile Include="Contable\Asiento\Generar\Filtro.cs" />
+    <Compile Include="Contable\Asiento\Generar\FiltroBanco.cs" />
+    <Compile Include="Contable\Asiento\Generar\FiltroCompra.cs" />
+    <Compile Include="Contable\Asiento\Generar\FiltroCxP.cs" />
+    <Compile Include="Contable\Asiento\Generar\FiltroInventario.cs" />
+    <Compile Include="Contable\Asiento\Generar\FiltroVenta.cs" />
+    <Compile Include="Contable\Asiento\Generar\Editar.cs" />
+    <Compile Include="Contable\Asiento\Generar\Insertar.cs" />
+    <Compile Include="Contable\Asiento\Generar\Resumen.cs" />
+    <Compile Include="Contable\Asiento\Insertar.cs" />
+    <Compile Include="Contable\Asiento\InsertarDetalle.cs" />
+    <Compile Include="Contable\Configuracion\CuentasCierre.cs" />
+    <Compile Include="Contable\Contadores\Ficha.cs" />
+    <Compile Include="Contable\Cuenta\Balance.cs" />
+    <Compile Include="Contable\Cuenta\Filtro.cs" />
+    <Compile Include="Contable\Cuenta\Movimiento.cs" />
+    <Compile Include="Contable\Integracion\Ficha.cs" />
+    <Compile Include="Contable\Integracion\Filtro.cs" />
+    <Compile Include="Contable\Integracion\Regla\Ficha.cs" />
+    <Compile Include="Contable\Periodo\CerrarMes.cs" />
+    <Compile Include="Contable\Periodo\Ficha.cs" />
+    <Compile Include="Contable\PlanCta\Agregar.cs" />
+    <Compile Include="Contable\PlanCta\Editar.cs" />
+    <Compile Include="Contable\PlanCta\Enumerados.cs" />
+    <Compile Include="Contable\PlanCta\Ficha.cs" />
+    <Compile Include="Contable\PlanCta\Filtro.cs" />
+    <Compile Include="Contable\PlanCta\Padre.cs" />
+    <Compile Include="Contable\PlanCta\Saldos.cs" />
+    <Compile Include="Contable\TipoDocumento\Editar.cs" />
+    <Compile Include="Contable\TipoDocumento\Eliminar.cs" />
+    <Compile Include="Contable\TipoDocumento\Ficha.cs" />
+    <Compile Include="Contable\TipoDocumento\Insertar.cs" />
+    <Compile Include="CtxCobrar\Documentos\BaseFiltro.cs" />
+    <Compile Include="CtxCobrar\Documentos\Pago\Ficha.cs" />
+    <Compile Include="CtxCobrar\Documentos\Pago\Filtro.cs" />
+    <Compile Include="CtxCobrar\Documentos\Pendiente\Ficha.cs" />
+    <Compile Include="CtxCobrar\Documentos\Pendiente\Filtro.cs" />
+    <Compile Include="CtxCobrar\Enumerados.cs" />
+    <Compile Include="CtxCobrar\Generar\DocAdm\NotaCredito.cs" />
+    <Compile Include="CtxCobrar\Generar\DocAdm\NotaDebito.cs" />
+    <Compile Include="CtxCobrar\Pago\Anular\Ficha.cs" />
+    <Compile Include="CtxCobrar\Pago\Comision.cs" />
+    <Compile Include="CtxCobrar\Pago\DocLiquida.cs" />
+    <Compile Include="CtxCobrar\Pago\Ficha.cs" />
+    <Compile Include="CtxCobrar\Pago\MedioPago.cs" />
+    <Compile Include="CtxCobrar\Pago\RetencionIva.cs" />
+    <Compile Include="CtxCobrar\Recibo\Documento.cs" />
+    <Compile Include="CtxCobrar\Recibo\Ficha.cs" />
+    <Compile Include="CtxCobrar\Recibo\Medio.cs" />
+    <Compile Include="CtxCobrar\Recibo\Pago.cs" />
+    <Compile Include="CtxPagar\Recibo\Documento.cs" />
+    <Compile Include="CtxPagar\Recibo\Ficha.cs" />
+    <Compile Include="CtxPagar\Recibo\Medio.cs" />
+    <Compile Include="CtxPagar\Recibo\Pago.cs" />
+    <Compile Include="Cuenta\Ficha.cs" />
+    <Compile Include="Empresa\Cobradores\Ficha.cs" />
+    <Compile Include="Empresa\DatosNegocio\Ficha.cs" />
+    <Compile Include="Empresa\Departamento\Actualizar.cs" />
+    <Compile Include="Empresa\Departamento\Enumerados.cs" />
+    <Compile Include="Empresa\Departamento\Ficha.cs" />
+    <Compile Include="Empresa\MediosPago\Ficha.cs" />
+    <Compile Include="Empresa\SerialesFiscales\Ficha.cs" />
+    <Compile Include="Filtro.cs" />
+    <Compile Include="Productos\Movimiento\Detalle.cs" />
+    <Compile Include="Productos\Movimiento\Ficha.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedores\Proveedor\Ficha.cs" />
+    <Compile Include="Reportes\Balances\Comprobacion\Ficha.cs" />
+    <Compile Include="Reportes\Balances\Comprobacion\Filtro.cs" />
+    <Compile Include="Reportes\Balances\ComprobanteDiario\Detalle.cs" />
+    <Compile Include="Reportes\Balances\ComprobanteDiario\Ficha.cs" />
+    <Compile Include="Reportes\Balances\GananciaPerdida\Ficha.cs" />
+    <Compile Include="Reportes\Balances\GananciaPerdida\Filtro.cs" />
+    <Compile Include="Reportes\Balances\General\Ficha.cs" />
+    <Compile Include="Reportes\Balances\General\Filtro.cs" />
+    <Compile Include="Reportes\CtaxCobrar\Clientes\Maestro.cs" />
+    <Compile Include="Reportes\CtaxCobrar\Documentos\Pendiente\Ficha.cs" />
+    <Compile Include="Reportes\CtaxCobrar\Enumerados.cs" />
+    <Compile Include="Reportes\CtaxCobrar\Vendedores\ComisionPagar.cs" />
+    <Compile Include="Reportes\CtaxCobrar\Vendedores\Consolidado.cs" />
+    <Compile Include="Reportes\CtaxCobrar\Vendedores\Documento.cs" />
+    <Compile Include="Reportes\CtaxCobrar\Vendedores\Filtro.cs" />
+    <Compile Include="Reportes\CtaxCobrar\Ventas\LibroVenta\Ficha.cs" />
+    <Compile Include="Reportes\Filtro.cs" />
+    <Compile Include="Reportes\Libro\Diario\Ficha.cs" />
+    <Compile Include="Reportes\Libro\Diario\Item.cs" />
+    <Compile Include="Reportes\Libro\Mayor\Ficha.cs" />
+    <Compile Include="Reportes\Libro\Mayor\Item.cs" />
+    <Compile Include="Reportes\PlanCta\Maestro\Ficha.cs" />
+    <Compile Include="Resultado\Resultado.cs" />
+    <Compile Include="Resultado\ResultadoEntidad.cs" />
+    <Compile Include="Resultado\ResultadoId.cs" />
+    <Compile Include="Resultado\ResultadoLista.cs" />
+    <Compile Include="Usuarios\Usuario\Ficha.cs" />
+    <Compile Include="Vendedores\Vendedor\Ficha.cs" />
+    <Compile Include="Venta\Enumerados.cs" />
+    <Compile Include="Venta\Ficha.cs" />
+    <Compile Include="Venta\FichaDetalle.cs" />
+    <Compile Include="Venta\Pago.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
